@@ -1,0 +1,395 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply m-0;
+}
+
+body,
+html {
+  @apply h-full;
+}
+
+.container {
+  @apply max-w-screen-2xl h-full;
+}
+
+.intro {
+  @apply h-full px-2 lg:px-20;
+}
+
+.nav-bar {
+  @apply flex   text-white  border-b;
+}
+
+.nav-list {
+  @apply hidden  lg:flex  ml-56;
+}
+
+.nav-link {
+  @apply mx-7 mt-8 text-lg hover:border-b-white hover:border-b-2 cursor-pointer;
+}
+
+.intro-section {
+  @apply flex flex-col justify-between lg:flex-row   mt-7 lg:mt-5;
+}
+
+.intro-text {
+  @apply text-white font-bold   text-4xl lg:text-5xl   text-center lg:text-left   my-auto mx-auto lg:mx-0   w-10/12  lg:w-45;
+}
+
+.intro-map {
+  @apply flex flex-col;
+}
+
+.intro-map-img {
+  @apply h-56 lg:h-auto w-56 lg:w-auto mx-auto my-5  lg:my-1;
+}
+
+.group {
+  @apply bg-white rounded-lg  p-2 lg:p-4;
+}
+
+.components {
+  @apply flex justify-between bg-white border border-slate-200 rounded-lg;
+}
+
+.dropdown-text {
+  @apply bg-slate-100 cursor-pointer mt-2;
+}
+
+.map-dropdown {
+  @apply w-1/2 p-2 bg-slate-100 text-center;
+}
+
+.map-dropdown-btn {
+  @apply bg-blue-500 p-5 rounded-r-md;
+}
+
+.map-btn {
+  @apply bg-blue-600 border border-l-gray-500 px-9 rounded-r-lg;
+}
+
+/*SECTION 2*/
+.section-2 {
+  @apply h-auto lg:h-full px-5 lg:px-20 mt-20;
+}
+
+.section-heading {
+  @apply font-bold   text-center lg:text-left   text-3xl lg:text-4xl   capitalize mb-6;
+}
+
+.section-heading-span {
+  @apply border-b-4 border-orange-600;
+}
+
+.section-2-group {
+  @apply flex flex-col lg:flex-row;
+}
+
+.section-2-img {
+  @apply object-fill;
+}
+
+.icon-group {
+  @apply flex flex-col lg:flex-row    gap-7 py-4;
+}
+
+.icon-flex-group {
+  @apply flex flex-row lg:flex-col   justify-center gap-6 lg:gap-12;
+}
+
+.icon {
+  @apply p-5 bg-white shadow-2xl rounded-xl;
+}
+
+.icon-container {
+  @apply w-1/2 lg:w-auto;
+}
+
+.icon-text {
+  @apply w-36 lg:w-auto mx-auto lg:mx-0   font-bold text-lg lg:text-xl  capitalize text-center lg:text-left;
+}
+
+/*SCETION 3*/
+.section-3 {
+  @apply h-auto p-7 lg:p-20  mt-20 bg-slate-100;
+}
+
+.section-3-heading-group {
+  @apply flex flex-col lg:flex-row justify-between mb-12 lg:mb-8;
+}
+
+.section-3-btn {
+  @apply w-1/2 lg:w-auto bg-orange-600 text-white rounded-md px-7 py-2 mx-auto lg:mx-0;
+}
+
+.section-3-container {
+  @apply flex justify-between overflow-x-scroll gap-4 lg:grid lg:grid-cols-3;
+}
+
+.card {
+  @apply w-80 border border-slate-400 rounded-3xl mb-16 mx-auto  hover:border-slate-100 hover:shadow-2xl transition ease-in duration-300 cursor-pointer;
+}
+
+.card-img {
+  @apply object-cover;
+}
+
+.card-details {
+  @apply p-4 pb-0;
+}
+
+.card-heading {
+  @apply font-bold text-2xl mb-4;
+}
+
+.card-text {
+  @apply text-gray-500 mb-1;
+}
+
+.card-price {
+  @apply text-orange-600 text-2xl font-bold mb-2;
+}
+
+.card-bottom {
+  @apply px-8 py-3 border-t border-slate-200 flex justify-between;
+}
+
+.card-bottom-group {
+  @apply flex gap-2;
+}
+
+.card-bottom-number {
+  @apply font-bold;
+}
+
+.card-bottom-icon {
+  @apply h-3.5 w-4 mt-1.5;
+}
+
+.prev-next {
+  @apply flex gap-0  w-76 mx-auto  bg-white rounded-lg border;
+}
+
+.prev-next-first {
+  @apply text-slate-400 bg-slate-100 font-semibold py-6 px-5 border border-slate-400 cursor-pointer;
+}
+
+.prev-next-text {
+  @apply text-orange-600 font-semibold py-6 px-5 border border-slate-400 hover:border-slate-300 hover:text-white hover:bg-orange-600 cursor-pointer;
+}
+
+/*SECTION 4*/
+.section-4 {
+  @apply p-7 lg:p-20 h-auto flex flex-col-reverse lg:flex-row justify-between gap-24;
+}
+
+.section-4-img-group {
+  @apply flex flex-row lg:flex-col gap-3 lg:gap-5 w-full lg:w-1/2 overflow-x-scroll lg:overflow-x-hidden;
+}
+
+.section-4-img-container {
+  @apply flex flex-row justify-between gap-3;
+}
+
+.section-4-img {
+  @apply rounded-xl;
+}
+
+.section-4-img-text {
+  @apply capitalize text-center text-white text-xl font-bold p-2 mt-2 mx-auto w-44;
+}
+
+.section-4-heading {
+  @apply font-bold text-4xl lg:text-5xl text-center lg:text-left mb-5;
+}
+
+.section-4-text-group {
+  @apply w-full lg:w-1/2 my-auto;
+}
+
+.section-4-text {
+  @apply text-center lg:text-left text-slate-600 text-lg font-semibold;
+}
+
+.section-4-btn {
+  @apply bg-orange-600 text-white text-lg font-bold rounded-xl
+  px-7 py-4 mt-10 mx-auto lg:mx-0 block;
+}
+
+/*SECTION 5*/
+.section-5 {
+  @apply px-5 lg:px-20 pt-5 pb-20  h-auto;
+}
+
+.section-5-heading {
+  @apply capitalize font-semibold text-center text-2xl mx-auto mb-7;
+}
+
+.input-section {
+  @apply bg-white shadow-2xl p-4 lg:p-10;
+}
+
+.input-section-heading {
+  @apply text-center text-orange-600 font-bold text-3xl  mb-5;
+}
+
+.first-second-row {
+  @apply flex flex-col lg:flex-row justify-between gap-6 py-3;
+}
+
+.third-row {
+  @apply flex flex-col lg:flex-row justify-between gap-6 py-2 mb-3;
+}
+
+.dropdown-label {
+  @apply w-84 text-slate-500;
+}
+
+.input-label {
+  @apply font-semibold text-slate-800 text-lg font-bold mb-3;
+}
+
+.s {
+  @apply text-red-700 font-bold;
+}
+
+.input {
+  @apply w-full lg:w-84 py-2 px-4 rounded-md text-sm font-semibold placeholder-slate-500 outline-1 outline outline-slate-300;
+}
+
+.description-input {
+  @apply w-full h-32 py-2 px-4 mb-3 rounded-md text-sm font-semibold placeholder-slate-500  outline-1 outline outline-slate-300 overflow-hidden;
+}
+
+.image-upload-section {
+  @apply mb-14;
+}
+
+.image-upload {
+  @apply w-full h-20 rounded-lg outline-dashed outline-orange-600;
+}
+
+.add-property {
+  @apply bg-orange-600 text-white text-center text-xl lg:text-2xl block mx-auto px-12 lg:px-40 py-5 rounded-xl;
+}
+
+/*SECTION 6*/
+.section-6 {
+  @apply px-2 lg:px-20  h-auto bg-orange-50;
+}
+
+.quote-video-group {
+  @apply flex flex-col-reverse lg:flex-row justify-between;
+}
+
+.quote-section {
+  @apply flex justify-between flex-col lg:w-1/2 overflow-x-hidden;
+}
+
+.quote-group {
+  @apply flex gap-5;
+}
+
+.quote {
+  @apply w-120 px-2 pt-20 pb-10 mx-auto  text-xl;
+}
+
+.quote-img {
+  @apply opacity-20 z-10 absolute top-11;
+}
+
+.profile-section {
+  @apply w-1/2 mx-auto lg:mx-0;
+}
+
+.profile {
+  @apply flex;
+}
+
+.profile-name {
+  @apply font-bold text-orange-600;
+}
+
+.profile-info {
+  @apply font-semibold text-slate-800;
+}
+
+.video-section {
+  @apply lg:w-1/2;
+}
+
+.three-dots {
+  @apply flex my-16 justify-center lg:justify-start;
+}
+
+.dot {
+  @apply bg-slate-300 hover:bg-orange-600 p-1  w-3 h-3 mx-1.5 rounded-full cursor-pointer transition ease-in duration-150;
+}
+
+/*FOOTER SECTION*/
+.footer-section {
+  @apply h-full p-2 lg:p-20;
+}
+
+.first-collection {
+  @apply flex flex-col lg:flex-row justify-between px-2 lg:px-20 lg:pb-20;
+}
+
+.footer-logo-text {
+  @apply lg:w-1/2 my-auto text-center lg:text-left  text-4xl font-bold;
+}
+
+.footer-logo-collection {
+  @apply lg:w-1/2 text-sm font-semibold;
+}
+
+.logo-collection-text {
+  @apply text-center lg:text-left;
+}
+
+.location {
+  @apply flex gap-5 text-slate-800 my-8 lg:my-5;
+}
+
+.contacts {
+  @apply flex justify-between text-slate-800 my-5;
+}
+
+.contact-1 {
+  @apply flex gap-5;
+}
+
+.contact-2 {
+  @apply flex gap-5 lg:mr-24;
+}
+
+.footer-icon-collection {
+  @apply flex justify-between my-8 lg:my-5;
+}
+
+.footer-icon-first {
+  @apply h-5 my-auto;
+}
+
+.footer-icon {
+  @apply h-3.5 my-auto;
+}
+
+.second-collection {
+  @apply flex justify-between px-2 lg:px-10 py-5;
+}
+
+.first-here {
+  @apply flex justify-between;
+}
+
+.footer-link {
+  @apply mx-4 uppercase text-slate-700 font-semibold;
+}
+
+.second-here {
+  @apply text-slate-400;
+}
